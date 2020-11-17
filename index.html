@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Tilt animation</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card-wrapper">
+
+    <div class="card">
+      <h2 class="card__title">Card title</h2>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore excepturi laboriosam quibusdam asperiores porro minima nesciunt labore magni harum doloribus. Non, quidem sint exercitationem facilis dolore ullam aperiam minus nihil!</p>
+      <span class="card__price">10 000 ₽</span>
+      <button class="card__btn">Order</button>
+      <img src="./Gold-coin.svg" class="card__img" alt="Gold-coin">
+    </div>
+
+    <div class="card">
+      <h2 class="card__title">Card title</h2>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore excepturi laboriosam quibusdam asperiores porro minima nesciunt labore magni harum doloribus. Non, quidem sint exercitationem facilis dolore ullam aperiam minus nihil!</p>
+      <span class="card__price">10 000 ₽</span>
+      <button class="card__btn">Order</button>
+      <img src="./Gold-coin.svg" class="card__img" alt="Gold-coin">
+    </div>
+
+    <div class="card">
+      <h2 class="card__title">Card title</h2>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore excepturi laboriosam quibusdam asperiores porro minima nesciunt labore magni harum doloribus. Non, quidem sint exercitationem facilis dolore ullam aperiam minus nihil!</p>
+      <span class="card__price">10 000 ₽</span>
+      <button class="card__btn">Order</button>
+      <img src="./Gold-coin.svg" class="card__img" alt="Gold-coin">
+    </div>
+
+    <div class="card">
+      <h2 class="card__title">Card title</h2>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore excepturi laboriosam quibusdam asperiores porro minima nesciunt labore magni harum doloribus. Non, quidem sint exercitationem facilis dolore ullam aperiam minus nihil!</p>
+      <span class="card__price">10 000 ₽</span>
+      <button class="card__btn">Order</button>
+      <img src="./Gold-coin.svg" class="card__img" alt="Gold-coin">
+    </div>
+
+    <div class="card">
+      <h2 class="card__title">Card title</h2>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore excepturi laboriosam quibusdam asperiores porro minima nesciunt labore magni harum doloribus. Non, quidem sint exercitationem facilis dolore ullam aperiam minus nihil!</p>
+      <span class="card__price">10 000 ₽</span>
+      <button class="card__btn">Order</button>
+      <img src="./Gold-coin.svg" class="card__img" alt="Gold-coin">
+    </div>
+
+    <div class="card">
+      <h2 class="card__title">Card title</h2>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore excepturi laboriosam quibusdam asperiores porro minima nesciunt labore magni harum doloribus. Non, quidem sint exercitationem facilis dolore ullam aperiam minus nihil!</p>
+      <span class="card__price">10 000 ₽</span>
+      <button class="card__btn">Order</button>
+      <img src="./Gold-coin.svg" class="card__img" alt="Gold-coin">
+    </div>
+    
+  </div>
+
+  <script src="./3dtiltanimation.js"></script>
+  <script>
+    new TiltAnim({
+      container: '.card-wrapper', // css class контейнерf для карточек
+      card: '.card', // css class карточки
+      duration: 200, // плавность анимации в ms
+      timingFunction: 'ease', // поведение аницации
+      stage: 4, // глубина трансформации (от 1 до 12)
+    });
+  </script>
+</body>
+</html>
